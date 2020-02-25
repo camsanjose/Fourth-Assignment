@@ -1,0 +1,71 @@
+Titanic Dataset
+=========================
+author: Camila San José
+font-import: https://fonts.googleapis.com/css?family=Comfortaa&display=swap
+font-family: 'Comfortaa' 
+css: custom.css
+
+
+Introduction
+=========================
+transition: none
+
+The dataset `Titanic` was chosen from the R-Package `Stat2DAta`. 
+
+```{r pressure, echo=FALSE}
+knitr::include_graphics("titanic2.JPG")
+```
+
+
+Dataset
+=========================
+incremental: true
+transition: rotate
+
+This dataset provides the following variables of the passengers of the famous cruiship the Titanic: 
+
+- Name
+- Passenger class ($1_{st}, 2_{nd}$ or $3_{rd}$)
+- Age (Child or Adult)
+- Sex (Male or Female)
+- If they survived (yes or no)
+
+Titanic Table
+========================================================
+
+Here we can see the `Titanic` dataset
+
+```{r, echo=FALSE}
+Titanic<- as.data.frame(Titanic)
+```
+
+```{r}
+head(Titanic)
+```
+
+
+Boxplot of Men and Women
+========================================================
+
+```{r, echo=F}
+summary(Titanic)
+```
+
+
+Boxplot of Men and Women, Child and Adult
+========================================================
+
+```{r, echo=F}
+plot(x=Titanic$Sex, y= Titanic$Freq, col= "seagreen")
+```
+***
+```{r, echo=F}
+plot(x=Titanic$Age, y= Titanic$Freq, col= "pink")
+```
+
+
+References
+========================================================
+
+From **Google images**:
+- [2,200 Passengers, a brave priest, and a ship name Titanic](https://faithmag.com/sites/default/files/styles/article_full/public/2018-09/titanic2.jpg?h=6521bd5e&itok=H8td6QVv)
