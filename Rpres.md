@@ -17,16 +17,18 @@ The dataset `Titanic` was chosen from the R-Package `Stat2DAta`.
 
 Dataset
 =========================
+type: sub-section
 incremental: true
 transition: rotate
 
 This dataset provides the following variables of the passengers of the famous cruiship the Titanic: 
 
-- Name
-- Passenger class ($1_{st}, 2_{nd}$ or $3_{rd}$)
-- Age (Child or Adult)
-- Sex (Male or Female)
-- If they survived (yes or no)
+<li class="fragment fade-in"> Passenger class ($1_{st}, 2_{nd}$ or $3_{rd}$)</li>
+<li class="fragment fade-in"> Age (Child or Adult)</li>
+<li class="fragment fade-in"> Sex (Male or Female)</li>
+<li class="fragment fade-in"> If they survived (yes or no)</li>
+
+
 
 Titanic Table
 ========================================================
@@ -73,6 +75,22 @@ Boxplot of Men and Women, Child and Adult
 ***
 ![plot of chunk unnamed-chunk-5](Rpres-figure/unnamed-chunk-5-1.png)
 
+Boxplot of Survivial and Class
+========================================================
+
+![plot of chunk unnamed-chunk-6](Rpres-figure/unnamed-chunk-6-1.png)
+***
+![plot of chunk unnamed-chunk-7](Rpres-figure/unnamed-chunk-7-1.png)
+
+
+Conclusions 
+========================================================
+incremental: true 
+
+- There were many more **males** than females in the ship.
+- There were much more **adults** than children in the ship.
+- There are much more people that did *not* survive, than those who did. 
+- There is a higher average of people in **third** class, and a lot more people in crew. 
 
 References
 ========================================================
